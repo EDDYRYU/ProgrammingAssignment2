@@ -10,6 +10,7 @@
 
 ## Write a short comment describing this function
 
+## makeCacheMatrix : a function that makes a list of functions with a given matrix
 makeCacheMatrix <- function(x = matrix()) { #e.g. Y <- makeCacheMatrix(matrix)
     m <- NULL #assign initial m value into NULL whenever makeCacheMatrix function is used.
     set <- function(y) x <<- y
@@ -23,9 +24,8 @@ makeCacheMatrix <- function(x = matrix()) { #e.g. Y <- makeCacheMatrix(matrix)
 
 
 ## Write a short comment describing this function
-
-cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
+## cacheSolve : check if there is a cached data already, and returns inverse matrix
+cacheSolve <- function(x, ...) { ## Return a matrix that is the inverse of 'x'
     m <- x$getInverse()
     # After running cacheSolve and before using makeCacheMatrix,
     # assign m cached data, but initially NULL as defined as above function
